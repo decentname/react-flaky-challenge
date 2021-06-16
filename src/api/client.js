@@ -11,10 +11,10 @@ module.exports = {
 
   savePeople: function(people) {
     return new Promise((resolve, reject) => {
-      setTimeout(() => {
+      // setTimeout(() => {
         localStorage.people = JSON.stringify(people);
         return resolve({success: true});
-      }, between(3500, 4500));
+      // }, between(3500, 4500));
     });
   }
 };
